@@ -40,12 +40,12 @@ for file_path in file_paths:
 		
 		# Extract values to dictionary.
 		values = extract_values(pdf_text)
-		print('Data was extracted from report no. ' + str(number_of_report) + '...')
+		print('Data was extracted from report no. ' + str(number_of_report) + '...\n\n')
 		
 		save_data = write_data(final_report, values, SEK_rate)
 		
 		number_of_report += 1
 
 #Exit process
-print("Process has been completed.")
+print("Process has been completed...")
 sys.exit()
